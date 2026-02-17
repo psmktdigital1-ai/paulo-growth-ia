@@ -21,7 +21,7 @@ export default function PauloGrowthIA() {
   const [_user, setUser] = useState<any>(null);
 
 
-  const [lead, setLead] = useState({ name: "", email: "", company: "" });
+  const [_lead, setLead] = useState({ name: "", email: "", company: "" });
 
   // =============================
   // AUTH LISTENER

@@ -18,7 +18,8 @@ export default function PauloGrowthIA() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [user, setUser] = useState<any>(null);
+  const [_user, setUser] = useState<any>(null);
+
 
   const [lead, setLead] = useState({ name: "", email: "", company: "" });
 

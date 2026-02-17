@@ -7,8 +7,8 @@ import { createClient } from "@supabase/supabase-js";
 // =====================================
 
 // 🔐 SUPABASE CONFIG (coloque depois suas chaves reais)
-const supabaseUrl = "https://ayxhucqunkkribwakhpb.supabase.co";
-const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF5eGh1Y3F1bmtrcmlid2FraHBiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEyOTE5NjksImV4cCI6MjA4Njg2Nzk2OX0.A9QG1qkaFe-o0yySTwBxMk_Be6KWqf8MnUswI_1ULOc";
+const supabaseUrl = import.meta.env.https://ayxhucqunkkribwakhpb.supabase.co;
+const supabaseAnonKey = import.meta.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF5eGh1Y3F1bmtrcmlid2FraHBiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEyOTE5NjksImV4cCI6MjA4Njg2Nzk2OX0.A9QG1qkaFe-o0yySTwBxMk_Be6KWqf8MnUswI_1ULOc;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export default function PauloGrowthIA() {
@@ -19,7 +19,6 @@ export default function PauloGrowthIA() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [, setUser] = useState<any>(null);
-
 
   const [_lead, setLead] = useState({ name: "", email: "", company: "" });
 
